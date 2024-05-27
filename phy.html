@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Learning</title>
+<style>
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3f3d3f;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 40px;
+    color: #f6f0f0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #e4dddd;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; /* Add this to allow flex items to wrap onto multiple lines */
+  }
+
+  .intro {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .intro h2 {
+    font-size: 20px;
+    color: #dcd7d7;
+    margin-bottom: 10px;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-wrap: wrap; /* Prevent videos from wrapping to the next line */
+    justify-content: center; /* Center align videos */
+  }
+
+  .video-container iframe {
+    flex: 0 0 auto; /* Let the width of each video be determined by its content */
+    margin: 10px; /* Add some spacing around videos */
+  }
+  
+  .book-download {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* Center align buttons */
+  }
+
+  .book-download button {
+    background-color: rgb(166, 153, 153);
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: large;
+    border-radius: 20px;
+  }
+  
+  .public-comment {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 999;
+  }
+
+  /* Styling for comments */
+  .comment {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Microsoft Learning</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h1 style="color: #dcd7d7;">Welcome to Microsoft Learning!</h1>
+      <p style="color: #dcd7d7;">This is your one-stop destination for learning Microsoft.</p>
+    </div>
+
+    <div class="video-container">
+      <!-- YouTube Video Embed Code Goes Here -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Vl0H-qTclOg?si=lwK2ePOgFIy3IxHm" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SA_SDo-cqpg?si=hZbtAEo3-nCwL4tY"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wbJcJCkBcMg?si=lfkxoyDNg_6by7Ao"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bXXKaQB4vTQ?si=7tXn7sRhLgvYaFs2"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="book-download">
+      <!-- Book Download Link Code Goes Here -->
+      <button>
+        <a aria-label="Open brochure in a new tab"
+          href="https://drive.google.com/file/d/1ZeZBIBrDGCpPv-rgZKaRXOD5RGZpg_2x/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark teal-text">
+          <i class="mdi-file-folder-open small"></i><span style="color:#040202">Edition 1 book</span>
+        </a>
+      </button>
+      <button>
+        <a aria-label="Open brochure in a new tab"
+          href="https://drive.google.com/file/d/1ZeZBIBrDGCpPv-rgZKaRXOD5RGZpg_2x/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark teal-text">
+          <i class="mdi-file-folder-open small"></i><span style="color:#0c0101">Edition 2 book</span>
+        </a>
+      </button>
+      <button>
+        <a aria-label="Open brochure in a new tab"
+          href="https://drive.google.com/file/d/1ZeZBIBrDGCpPv-rgZKaRXOD5RGZpg_2x/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark teal-text">
+          <i class="mdi-file-folder-open small"></i><span style="color:#0a0202">Edition 3 book</span>
+        </a>
+      </button>
+      <button>
+        <a aria-label="Open brochure in a new tab"
+          href="https://drive.google.com/file/d/1ZeZBIBrDGCpPv-rgZKaRXOD5RGZpg_2x/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark teal-text">
+          <i class="mdi-file-folder-open small"></i><span style="color:#060202">Edition 4 book</span>
+        </a>
+      </button>
+    </div>
+
+    <div class="public-comment">
+      <h2 style="color: #dcd7d7;">Public Comments</h2>
+      <p style="color: #dcd7d7;">Feel free to leave your comments and feedback below:</p>
+      <form id="comment-form">
+        <textarea id="comment-input" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <!-- Element to display comments -->
+    <div id="comments-container"></div>
+
+  </main>
+
+  <footer>
+    <p style="color: #dcd7d7;">&copy; 2024 Microsoft Learning. All rights reserved.</p>
+  </footer>
+</div>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+  import { getFirestore, collection, addDoc, orderBy, query, getDocs } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAu5pJgKw0ml3LNfa0CI1aiyecIO_oShF8",
+    authDomain: "elearn-d392b.firebaseapp.com",
+    databaseURL: "https://elearn-d392b-default-rtdb.firebaseio.com",
+    projectId: "elearn-d392b",
+    storageBucket: "elearn-d392b.appspot.com",
+    messagingSenderId: "1052559099699",
+    appId: "1:1052559099699:web:c88fb373fcf13590842046"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Function to save comment to Firestore
+  async function saveComment(commentText) {
+    try {
+      const docRef = await addDoc(collection(db, "comments"), {
+        text: commentText,
+        timestamp: new Date().toISOString() // Use Date object for timestamp
+      });
+      console.log("Comment saved with ID: ", docRef.id);
+      displayComments();
+      // Add a notification
+      showNotification("Comment saved successfully!");
+    } catch (error) {
+      console.error("Error adding comment: ", error);
+      // Add error notification
+      showNotification("Error saving comment. Please try again later.");
+    }
+  }
+
+  // Function to display notification
+  function showNotification(message) {
+    // Create a notification element
+    const notification = document.createElement("div");
+    notification.textContent = message;
+    notification.classList.add("notification");
+
+    // Append notification to the body
+    document.body.appendChild(notification);
+
+    // Remove notification after 3 seconds
+    setTimeout(() => {
+      notification.remove();
+    }, 3000);
+  }
+
+  // Function to retrieve comments from Firestore and display them
+  async function displayComments() {
+    const commentsContainer = document.getElementById("comments-container");
+    commentsContainer.innerHTML = "";
+
+    try {
+      const q = query(collection(db, "comments"), orderBy("timestamp", "desc"));
+      const querySnapshot = await getDocs(q);
+      querySnapshot.forEach((doc) => {
+        const commentData = doc.data();
+        const commentElement = document.createElement("div");
+        commentElement.textContent = commentData.text;
+        commentElement.classList.add("comment"); // Add class for styling
+        commentsContainer.appendChild(commentElement);
+      });
+    } catch (error) {
+      console.error("Error getting comments: ", error);
+    }
+  }
+
+  window.onload = function() {
+    displayComments();
+  };
+
+  const commentForm = document.getElementById("comment-form");
+  commentForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const commentInput = document.getElementById("comment-input");
+    const commentText = commentInput.value.trim();
+    if (commentText !== "") {
+      saveComment(commentText);
+      commentInput.value = "";
+    }
+  });
+</script>
+
+</body>
+</html>

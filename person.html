@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question form</title>
+<link rel="stylesheet" type="text/css" href="stylep.css">
+</head>
+<body>
+
+<header>
+  <h1>Question forum</h1>
+</header>
+
+<main>
+    <div class="question question-1">
+        <h2>How do I create a simple HTML page?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ante vitae urna dignissim suscipit. Donec mollis eros nec ultricies varius.</p>
+        <button class="show-answer-btn">Show Answer</button>
+        <div class="answer" style="display: none;">
+            <p>Here's how you can create a simple HTML page:</p>
+            <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Simple HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <button class="-btn"></button>
+            <button class="reply-btn">Reply</button>
+        </div>
+    </div>
+    
+    <div class="question question-2">
+        <h2>How do I create a simple HTML page?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ante vitae urna dignissim suscipit. Donec mollis eros nec ultricies varius.</p>
+        <button class="show-answer-btn">Show Answer</button>
+        <div class="answer" style="display: none;">
+            <p>Here's how you can create a simple HTML page:</p>
+            <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Simple HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <button class="-btn"></button>
+            <button class="reply-btn">Reply</button>
+        </div>
+    </div>
+    <div class="question question-3">
+      <h2>How do I create a simple HTML page?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ante vitae urna dignissim suscipit. Donec mollis eros nec ultricies varius.</p>
+      <button class="show-answer-btn">Show Answer</button>
+      <div class="answer" style="display: none;">
+          <p>Here's how you can create a simple HTML page:</p>
+          <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Simple HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+          <button class="-btn"></button>
+          <button class="reply-btn">Reply</button>
+      </div>
+  </div>
+  <div class="question question-4">
+    <h2>How do I create a simple HTML page?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ante vitae urna dignissim suscipit. Donec mollis eros nec ultricies varius.</p>
+    <button class="show-answer-btn">Show Answer</button>
+    <div class="answer" style="display: none;">
+        <p>Here's how you can create a simple HTML page:</p>
+        <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Simple HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+        <button class="-btn"></button>
+        <button class="reply-btn">Reply</button>
+    </div>
+</div>
+
+    <!-- Add more questions as needed -->
+
+    <!-- New Question Form -->
+    <form id="new-question-form">
+        <label for="new-question">New Question:</label>
+        <input type="text" id="FnameInp" required>
+        <br><br>
+
+        <label>  Answer       :</label>
+        <input type="text" id="LnameInp" required>
+        <br><br>
+       
+        <label>  Cnic        :</label>
+        <input type="text" id="CnicInp" >
+        <br><br>
+        
+        <button id="AddBtn" style="height: 30px; width: 100px;">Add</button>
+        <button id="RetBtn" style="height: 30px; width: 100px;">Retrieve</button>
+        <button id="UpdBtn" style="height: 30px; width: 100px;">Update</button>
+      </form>
+</main>
+
+<footer>
+  &copy; 2024 All rights reserved.
+</footer>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+import { getDatabase, ref, set, get, update } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-database.js";
+
+// Initialize Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyAu5pJgKw0ml3LNfa0CI1aiyecIO_oShF8",
+  authDomain: "elearn-d392b.firebaseapp.com",
+  databaseURL: "https://elearn-d392b-default-rtdb.firebaseio.com",
+  projectId: "elearn-d392b",
+  storageBucket: "elearn-d392b.appspot.com",
+  messagingSenderId: "1052559099699",
+  appId: "1:1052559099699:web:c88fb373fcf13590842046"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase();
+
+ // Elements
+ const FnameInp = document.getElementById('FnameInp');
+ const LnameInp = document.getElementById('LnameInp');
+ const CnicInp = document.getElementById('CnicInp');
+ const AddBtn = document.getElementById('AddBtn');
+ const RetBtn = document.getElementById('RetBtn');
+ const UpdBtn = document.getElementById('UpdBtn');
+
+ // Add data function
+ function AddData() {
+   set(ref(db, 'EmployeeSet/' + CnicInp.value), {
+     Fname: FnameInp.value,
+     Lname: LnameInp.value,
+     cnic: Number(CnicInp.value)
+   })
+   .then(() => {
+     alert('Data Added Successfully');
+   })
+   .catch((error) => {
+     alert('Error Occurred');
+     console.log(error);  
+   });
+ }
+
+ // Retrieve data function
+ function RetData() {
+   const dbRef = ref(db, 'EmployeeSet/' + CnicInp.value);
+   get(dbRef)
+     .then((snapshot) => {
+       if (snapshot.exists()) {
+         const data = snapshot.val();
+         FnameInp.value = data.Fname;
+         LnameInp.value = data.Lname;
+       } else {
+         alert('No Data Found');
+       }
+     })
+     .catch((error) => {
+       alert('Error Occurred');
+       console.log(error);
+     });
+ }
+
+ // Update data function
+ function UpdData() {
+   update(ref(db, 'EmployeeSet/' + CnicInp.value), {
+     Fname: FnameInp.value,
+     Lname: LnameInp.value,
+     cnic: Number(CnicInp.value)
+   })
+   .then(() => {
+     alert('Data Updated Successfully');
+   })
+   .catch((error) => {
+     alert('Error Occurred');
+     console.log(error);  
+   });
+ }
+
+ // Event listeners
+ AddBtn.addEventListener('click', AddData);
+ RetBtn.addEventListener('click', RetData);
+ UpdBtn.addEventListener('click', UpdData);
+</script>
+
+<!-- Include Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+<script src="scriptp.js"></script>
+
+</body>
+</html>

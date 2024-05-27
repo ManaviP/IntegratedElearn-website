@@ -1,0 +1,95 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 1rem;
+}
+
+.question {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.question h2 {
+  color: #333;
+}
+
+.question p {
+  color: #666;
+}
+
+.show-answer-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.reply-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.answer {
+  margin-top: 1rem;
+}
+
+.answer p {
+  color: #444;
+}
+
+.question-1 {
+  background-color: #b6b5b5; /* Light blue */
+}
+
+.question-2 {
+  background-color: #b6b5b5; /* Beige */
+}
+.question-3 {
+  background-color: #b6b5b5; /* Beige */
+}
+.question-4 {
+  background-color: #b6b5b5; /* Beige */
+}
+.label{
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 110px;
+}
+input,
+select {
+  width: 180px;
+  height: 30px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add similar styling for other questions */
