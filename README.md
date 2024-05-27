@@ -6,7 +6,7 @@
 
 ### Description
 
-- html,css,javascript,bootstrap, nodejs for setting up firebase,firebase console backend databse
+- html,css,javascript,scss,bootstrap, nodejs for setting up firebase,firebase console backend databse
 - in question forum ,new question get saved to realtime database of firebase where both question and answered revied so that wrong info does not get displayed
 - in course learning, one could watch videos related to topic ,download the books related to it also post comment publically which can be something they wanted to share or their doubts
 - posted comments get saved to firestore database and displays ,if found something unrelated it will be deleted
